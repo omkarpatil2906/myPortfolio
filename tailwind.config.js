@@ -13,11 +13,12 @@ module.exports = {
       },
       colors: {
         light: '#f9fafb',
-        lightAccent: '#0ea5e9',
+        lightAccent: '#00f0ff',     
         dark: '#0f172a',
         darkAccent: '#00f0ff',
-
-      },
+        light2: '#f1f5f9',
+        dark2: '#0e1629',
+      }
     },
   },
   plugins: [],

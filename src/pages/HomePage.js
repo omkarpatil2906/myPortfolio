@@ -2,13 +2,14 @@ import React from 'react'
 
 function HomePage() {
     return (
-        <div className="h-[92vh] overflow-hidden bg-light text-dark dark:bg-dark  dark:text-light font-poppins flex items-center justify-center">
-            <div className="flex flex-col-reverse md:flex-row items-center gap-10 max-w-6xl px-6 py-12 rounded-3xl">
+        <div className="h-[75vh] overflow-hidden bg-light text-dark dark:bg-dark  dark:text-light font-poppins flex items-center justify-center">
+            <div className="flex flex-col-reverse md:flex-row items-center md:justify-between gap-10 max-w-7xl px-6 py-12 rounded-3xl w-full">
+
 
                 {/* Text */}
                 <div className="flex-1 text-center md:text-left">
                     <h2 className="text-lg text-gray-500 dark:text-gray-300">Hello, It's Me</h2>
-                    <h1 className="text-4xl md:text-5xl font-bold mt-2">Omkar Patil</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold  mt-2">Omkar Patil</h1>
                     <h3 className="text-xl mt-2">
                         And I'm a <span className="text-lightAccent dark:text-darkAccent font-semibold">Frontend Developer</span>
                     </h3>
@@ -31,7 +32,7 @@ function HomePage() {
                 {/* Image */}
                 <div className="flex-1 relative">
                     <div className="w-60 h-60 md:w-72 md:h-72 rounded-full overflow-hidden mx-auto shadow-[0_0_60px_#00f0ff]">
-                        <img src="/your-profile.png" alt="profile" className="w-full h-full object-cover" />
+                        <img src={`D:\FRd`} alt="profile" className="w-full h-full object-cover" />
                     </div>
                 </div>
             </div>

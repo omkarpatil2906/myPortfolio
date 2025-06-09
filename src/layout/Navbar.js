@@ -6,10 +6,10 @@ function Navbar({ darkMode, setDarkMode }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-light text-dark dark:text-light dark:bg-dark">
-            <div className="max-w-7xl mx-auto p-5 flex justify-between items-center">
+        <nav className="relative bg-light text-dark dark:text-light dark:bg-dark">
+            <div className="max-w-7xl mx-auto p-5 lg:py-7 flex justify-between items-center">
                 {/* Logo */}
-                <div className="text-2xl font-poppins font-medium"><span className='text-darkAccent'>P</span>ortfolio</div>
+                <div className="text-2xl font-poppins font-medium"><span className='dark:text-darkAccent'>P</span>ortfolio</div>
 
                 {/* Desktop Links */}
                 <ul className="hidden md:flex gap-6 font-josefin text-xl">
@@ -42,7 +42,7 @@ function Navbar({ darkMode, setDarkMode }) {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <ul className="md:hidden flex flex-col gap-4 px-4 pb-4 font-josefin text-xl">
+                <ul className="absolute top-full left-0 w-full z-20 bg-light dark:bg-dark text-dark dark:text-light md:hidden flex flex-col gap-4 px-6 py-6 font-josefin text-xl shadow-lg transition-all duration-300">
                     <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
                     <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
                     <li><Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link></li>
