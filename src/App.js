@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './layout/Navbar';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import ProjectSection from './pages/ProjectPage';
-
+import RoutePage from './routes/RoutePage';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -22,10 +19,7 @@ function App() {
   return (
     <div className={`font-poppins ${darkMode ? 'bg-dark-bg text-dark-text' : 'bg-light-bg text-light-text'} min-h-screen`}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <HomePage />
-      <AboutPage />
-
-      <ProjectSection/>
+      <RoutePage />
     </div>
   );
 }

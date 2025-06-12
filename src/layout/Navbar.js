@@ -13,12 +13,15 @@ function Navbar({ darkMode, setDarkMode }) {
 
                 {/* Desktop Links */}
                 <ul className="hidden md:flex gap-6 font-josefin text-xl">
-                    <li><Link to="/" className="hover:text-darkAccent dark:hover:text-lightAccent">Home</Link></li>
-                    <li><Link to="/about" className="hover:text-darkAccent dark:hover:text-lightAccent">About</Link></li>
-                    <li><Link to="/projects" className="hover:text-darkAccent dark:hover:text-lightAccent">Projects</Link></li>
-                    <li><Link to="/experience" className="hover:text-darkAccent dark:hover:text-lightAccent">Experience</Link></li>
-                    <li><Link to="/contact" className="hover:text-darkAccent dark:hover:text-lightAccent">Contact</Link></li>
-                    <li><Link to="/resume" className="hover:text-darkAccent dark:hover:text-lightAccent">Resume</Link></li>
+                    <ul className="hidden md:flex gap-6 font-josefin text-xl">
+                        <li><a href="#home" className="hover:text-darkAccent dark:hover:text-lightAccent">Home</a></li>
+                        <li><a href="#about" className="hover:text-darkAccent dark:hover:text-lightAccent">About</a></li>
+                        <li><a href="#projects" className="hover:text-darkAccent dark:hover:text-lightAccent">Projects</a></li>
+                        <li><a href="#experience" className="hover:text-darkAccent dark:hover:text-lightAccent">Experience</a></li>
+                        <li><a href="#contact" className="hover:text-darkAccent dark:hover:text-lightAccent">Contact</a></li>
+                    </ul>
+
+                    {/* <li><Link to="/resume" className="hover:text-darkAccent dark:hover:text-lightAccent">Resume</Link></li> */}
                 </ul>
 
                 {/* Theme Toggle Button */}
@@ -43,12 +46,11 @@ function Navbar({ darkMode, setDarkMode }) {
             {/* Mobile Menu */}
             {isOpen && (
                 <ul className="absolute top-full left-0 w-full z-20 bg-light dark:bg-dark text-dark dark:text-light md:hidden flex flex-col gap-4 px-6 py-6 font-josefin text-xl shadow-lg transition-all duration-300">
-                    <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
-                    <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
-                    <li><Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link></li>
-                    <li><Link to="/experience" onClick={() => setIsOpen(false)}>Experience</Link></li>
-                    <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
-                    <li><Link to="/resume" onClick={() => setIsOpen(false)}>Resume</Link></li>
+                    <li><a href="#home" onClick={() => setIsOpen(false)}>Home</a></li>
+                    <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
+                    <li><a href="#projects" onClick={() => setIsOpen(false)}>Projects</a></li>
+                    <li><a href="#experience" onClick={() => setIsOpen(false)}>Experience</a></li>
+                    <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
                 </ul>
             )}
         </nav>
