@@ -29,7 +29,7 @@ function ExperiencePage() {
   ];
 
   return (
-    <section className="bg-light dark:bg-dark text-dark dark:text-light py-16 px-4 sm:px-8 md:px-12 font-poppins min-h-screen">
+    <section className="bg-light dark:bg-dark text-dark dark:text-light pt-24 px-4 sm:px-8 md:px-12 font-poppins min-h-screen">
       <div className="max-w-[85rem] mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           My <span className="text-darkAccent dark:text-lightAccent">Experience</span>

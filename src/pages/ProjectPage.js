@@ -17,7 +17,7 @@ const projects = [
 
 function ProjectSection() {
     return (
-        <section className="bg-light text-dark dark:bg-dark dark:text-light py-20 px-6 md:px-12 font-poppins transition-colors duration-300">
+        <section className="bg-light text-dark dark:bg-dark dark:text-light pt-24 px-6 md:px-12 font-poppins transition-colors duration-300">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-4xl font-bold text-center mb-12">
                     My <span className="text-darkAccent dark:text-lightAccent">Projects</span>

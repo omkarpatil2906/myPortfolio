@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './layout/Navbar';
 import RoutePage from './routes/RoutePage';
+import Footer from './layout/Footer';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -20,6 +21,7 @@ function App() {
     <div className={`font-poppins ${darkMode ? 'bg-dark-bg text-dark-text' : 'bg-light-bg text-light-text'} min-h-screen`}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <RoutePage />
+      <Footer />
     </div>
   );
 }

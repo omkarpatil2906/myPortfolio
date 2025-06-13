@@ -4,7 +4,7 @@ function AboutPage() {
   return (
     <section
       id="about"
-      className="bg-light text-dark dark:bg-dark dark:text-light py-16 px-6 md:px-12 font-poppins transition-colors duration-300"
+      className="bg-light text-dark dark:bg-dark dark:text-light pb-12 pt-24 px-6 md:px-12 font-poppins transition-colors duration-300"
     >
       <div
         className="max-w-5xl mx-auto p-6 md:p-10 rounded-2xl 

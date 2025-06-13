@@ -3,7 +3,7 @@ import Omkar from '../common/assets/Omkar.png'
 
 function HomePage() {
     return (
-        <div className="h-[75vh] overflow-hidden bg-light text-dark dark:bg-dark dark:text-light font-poppins flex items-center justify-center">
+        <div className="h-[75vh] overflow-hidden bg-light text-dark dark:bg-dark dark:text-light font-poppins pt-14 flex items-center justify-center">
             <div className="flex flex-col-reverse md:flex-row items-center md:justify-between gap-10 max-w-7xl px-6 py-12 rounded-3xl w-full">
 
                 {/* Text */}
