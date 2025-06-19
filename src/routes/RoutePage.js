@@ -19,4 +19,4 @@ const RoutePage = () => {
   );
 };
 
-export default RoutePage;
+export default RoutePage; 
