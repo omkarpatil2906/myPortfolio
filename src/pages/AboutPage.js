@@ -4,7 +4,7 @@ function AboutPage() {
   return (
     <section
       id="about"
-      className="bg-light text-dark dark:bg-dark dark:text-light pb-12 pt-24 px-6 md:px-12 font-poppins transition-colors duration-300"
+      className="min-h-screen bg-light text-dark dark:bg-dark dark:text-light pb-12 pt-24 px-6 md:px-12 font-poppins transition-colors duration-300"
     >
       <div
         className="max-w-5xl mx-auto p-6 md:p-10 rounded-2xl 
@@ -17,7 +17,7 @@ function AboutPage() {
         </h2>
 
         <p className="text-lg md:text-xl font-josefin leading-relaxed text-center md:text-left">
-          I’m a <span className="font-semibold text-darkAccent dark:text-lightAccent">Frontend Developer</span> with 1 year of professional experience at{' '}
+          I’m a <span className="font-semibold text-darkAccent dark:text-lightAccent">Fullstack Developer</span> with 1 year of professional experience at{' '}
           <span className="font-semibold">Appystack Pvt. Ltd., Pune</span>, focused on crafting responsive and user-centric web applications.
         </p>
 
@@ -25,7 +25,8 @@ function AboutPage() {
           I’ve worked with modern frontend tech like{' '}
           <span className="font-medium">React.js</span>, <span className="font-medium">HTML</span>, <span className="font-medium">CSS</span>, and libraries like{' '}
           <span className="font-medium">MUI</span>, <span className="font-medium">Bootstrap</span>, and <span className="font-medium">Tailwind CSS</span>. I also frequently use{' '}
-          <span className="font-medium">React Hook Form</span> for efficient form handling.
+          <span className="font-medium">React Hook Form</span> for efficient form handling. On the backend, I have hands-on experience with{' '}
+          <span className="font-medium">Node.js</span>, <span className="font-medium">Express.js</span>, <span className="font-medium">MongoDB</span>, and <span className="font-medium">SQL</span>.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mt-10">
@@ -37,6 +38,10 @@ function AboutPage() {
             'Bootstrap',
             'MUI',
             'React Hook Form',
+            'Node.js',
+            'Express.js',
+            'MongoDB',
+            'SQL',
           ].map((tech, index) => (
             <span
               key={index}

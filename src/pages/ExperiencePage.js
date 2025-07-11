@@ -30,9 +30,9 @@ function ExperiencePage() {
 
   return (
     <section className="bg-light dark:bg-dark text-dark dark:text-light pt-24 px-4 sm:px-8 md:px-12 font-poppins min-h-screen">
-      <div className="max-w-[85rem] mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          My <span className="text-darkAccent dark:text-lightAccent">Experience</span>
+      <div className="max-w-[75rem] mx-auto">
+        <h2 className="text-3xl md:text-4xl  font-josefin font-extrabold text-center mb-12">
+          My <span className="text-darkAccent dark:text-lightAccent ">Experience</span>
         </h2>
 
         <div className="space-y-10">
@@ -42,8 +42,8 @@ function ExperiencePage() {
               className="rounded-xl p-6 md:p-8 bg-light/80 dark:bg-dark/60 shadow-lg border border-gray-200 dark:border-gray-700 backdrop-blur"
             >
               <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                <h3 className="text-2xl font-semibold">
-                  {exp.title} @ <span className="text-darkAccent dark:text-lightAccent">{exp.company}</span>
+                <h3 className="text-xl font-semibold">
+                  {exp.title} @<span className="text-darkAccent dark:text-lightAccent">{exp.company}</span>
                 </h3>
                 <p className="mt-2 md:mt-0 text-sm text-gray-500 dark:text-gray-400">{exp.duration}</p>
               </div>

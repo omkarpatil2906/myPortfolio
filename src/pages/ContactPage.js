@@ -6,12 +6,12 @@ function ContactPage() {
     return (
         <section
 
-            className="bg-light2 dark:bg-dark text-dark dark:text-light py-24  font-poppins  flex items-center"
+            className="bg-light2 dark:bg-dark text-dark dark:text-light py-24  font-poppins  flex flex-col items-center"
         >
+            <h2 className="text-3xl md:text-4xl font-bold mb-24 text-center">
+                Get in <span className="text-darkAccent dark:text-lightAccent">Touch</span>
+            </h2>
             <div className="max-w-4xl w-full mx-auto rounded-xl border border-darkAccent dark:border-lightAccent shadow-lg backdrop-blur-md bg-white/10 dark:bg-dark/30 p-8">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
-                    Get in <span className="text-darkAccent dark:text-lightAccent">Touch</span>
-                </h2>
 
                 <div className="grid md:grid-cols-2 gap-8">
                     {/* Left Column - Info */}
@@ -42,12 +42,12 @@ function ContactPage() {
 
                     {/* Right Column - Social */}
                     <div className="flex flex-col justify-center items-start md:items-center gap-4">
-                        <p className="text-lg">
+                        <p className="text">
                             Feel free to connect with me on social media!
                         </p>
                         <div className="flex gap-6 text-2xl">
                             <a
-                                href="https://www.linkedin.com/in/your-profile"
+                                href="https://www.linkedin.com/in/omkar-patil-b744752a9/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-darkAccent dark:text-lightAccent hover:scale-110 transition-transform"
@@ -55,7 +55,7 @@ function ContactPage() {
                                 <FaLinkedin />
                             </a>
                             <a
-                                href="https://github.com/your-username"
+                                href="https://github.com/omkarpatil2906"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-darkAccent dark:text-lightAccent hover:scale-110 transition-transform"

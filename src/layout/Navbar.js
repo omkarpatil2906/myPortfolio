@@ -42,7 +42,7 @@ function Navbar({ darkMode, setDarkMode }) {
     const normalClass = 'hover:text-darkAccent dark:hover:text-lightAccent';
 
     return (
-        <nav className="fixed top-0 left-0 w-full z-50 bg-light text-dark dark:text-light dark:bg-dark shadow-md transition-all duration-300">
+        <nav className="fixed top-0 left-0 w-full z-50 bg-light text-dark dark:text-light dark:bg-dark transition-all duration-300">
             <div className="max-w-7xl mx-auto p-5 lg:py-7 flex justify-between items-center">
                 {/* Logo */}
                 <div className="text-2xl font-poppins font-medium">
