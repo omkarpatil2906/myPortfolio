@@ -69,9 +69,10 @@ function Navbar({ darkMode, setDarkMode }) {
                     {/* Logo */}
                     <div className="flex items-center gap-3 group cursor-pointer">
                         <div className="transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
-                            <LofiFyLogo />
+                            {/* <LofiFyLogo /> */}
+                            
                         </div>
-                        <p className="text-2xl font-bold text-dark dark:text-light">LifoFy</p>
+                        <p className="text-2xl font-bold text-dark dark:text-light"> <span className='text-emeraldGreen mr-0.5'>O</span>P</p>
                     </div>
 
                     {/* Desktop Menu */}
