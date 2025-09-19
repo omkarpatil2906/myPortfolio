@@ -1,0 +1,68 @@
+/* Custom Carousel Styles */
+.project-carousel {
+  padding: 20px 5px;
+}
+
+/* Custom Pagination Styles */
+.swiper-pagination-bullet-custom {
+  width: 12px;
+  height: 12px;
+  background-color: #d1d5db;
+  border-radius: 50%;
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 4px;
+}
+
+.swiper-pagination-bullet-active-custom {
+  background-color: #10b981; /* Adjust to match your darkAccent color */
+  transform: scale(1.2);
+}
+
+/* Dark mode pagination */
+.dark .swiper-pagination-bullet-custom {
+  background-color: #6b7280;
+}
+
+.dark .swiper-pagination-bullet-active-custom {
+  background-color: #34d399; /* Adjust to match your lightAccent color */
+}
+
+/* Custom Navigation Button Hover Effects */
+/* .swiper-button-prev-custom:hover, */
+/* .swiper-button-next-custom:hover {
+  transform: scale(1.1);
+} */
+
+/* Hide default Swiper navigation */
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+/* Custom pagination positioning */
+.swiper-pagination {
+  bottom: 10px !important;
+}
+
+/* Card hover effects */
+.project-carousel .swiper-slide {
+  height: auto;
+}
+
+/* Responsive adjustments */
+/* @media (max-width: 640px) {
+  .swiper-button-prev-custom,
+  .swiper-button-next-custom {
+    display: none;
+  }
+} */
+
+/* Text line clamp utility */
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

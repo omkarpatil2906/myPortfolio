@@ -1,77 +1,68 @@
-// src/pages/ContactPage.jsx
 import React from 'react';
-import { FaLinkedin, FaGithub, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
+import { FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 function ContactPage() {
     return (
-        <section
+        <>
+            <Helmet>
+                <title>Contact | Omkar Patil</title>
+                <meta
+                    name="description"
+                    content="Get in touch with Omkar Patil for web development, React.js projects, and collaborations."
+                />
+                <meta name="robots" content="index, follow" />
+            </Helmet>
 
-            className="bg-light2 dark:bg-dark text-dark dark:text-light py-24  font-poppins  flex flex-col items-center"
-        >
-            <h2 className="text-3xl md:text-4xl font-bold mb-24 text-center">
-                Get in <span className="text-darkAccent dark:text-lightAccent">Touch</span>
-            </h2>
-            <div className="max-w-4xl w-full mx-auto rounded-xl border border-darkAccent dark:border-lightAccent shadow-lg backdrop-blur-md bg-white/10 dark:bg-dark/30 p-8">
+            <section className="min-h-screen flex flex-col justify-center items-center py-24 font-poppins">
+                <div className="max-w-6xl mx-auto p-3">
+                    <h2 className="text-3xl md:text-4xl uppercase font-poppins font-bold mb-6 text-center">
+                        Let's{' '}
+                        <span className="bg-gradient-to-r from-emeraldGreen to-techBlue bg-clip-text text-transparent">
+                            Connect
+                        </span>
+                    </h2>
+                    <p className="text-center mb-12 text-lg text-gray-700 dark:text-gray-300">
+                        Whether you need a portfolio, business website, or frontend development – 
+                        I’m ready to help you bring your ideas to life.
+                    </p>
 
-                <div className="grid md:grid-cols-2 gap-8">
-                    {/* Left Column - Info */}
-                    <div className="space-y-4">
-                        <div className="flex items-center gap-4">
-                            <FaMapMarkerAlt className="text-xl text-darkAccent dark:text-lightAccent" />
-                            <span>Belgaum, Karnataka, India</span>
+                    <div className="grid md:grid-cols-2 gap-10 bg-white dark:bg-dark2 p-8 rounded-2xl shadow-lg border border-techBlue transition-all duration-300">
+                        {/* Contact Info */}
+                        <div className="space-y-6">
+                            <div className="flex items-center gap-4">
+                                <FaMapMarkerAlt className="text-xl text-techBlue" />
+                                <span>Belgaum, Karnataka, India</span>
+                            </div>
+                            <div className="flex items-center gap-4">
+                                <FaEnvelope className="text-xl text-techBlue" />
+                                <a
+                                    href="mailto:ompatil2906@gmail.com"
+                                    className="hover:underline"
+                                    aria-label="Email"
+                                >
+                                    ompatil2906@gmail.com
+                                </a>
+                            </div>
                         </div>
-                        <div className="flex items-center gap-4">
-                            <FaEnvelope className="text-xl text-darkAccent dark:text-lightAccent" />
-                            <a
-                                href="https://mail.google.com/mail/?view=cm&fs=1&to=ompatil2906@gmail.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="hover:underline"
-                            >
-                                ompatil2906@gmail.com
-                            </a>
 
-                        </div>
-                        <div className="flex items-center gap-4">
-                            <FaPhoneAlt className="text-xl text-darkAccent dark:text-lightAccent" />
-                            <a href="tel:+917975789854" className="hover:underline">
-                                +91 79757 89854
-                            </a>
-                        </div>
-                    </div>
-
-                    {/* Right Column - Social */}
-                    <div className="flex flex-col justify-center items-start md:items-center gap-4">
-                        <p className="text">
-                            Feel free to connect with me on social media!
-                        </p>
-                        <div className="flex gap-6 text-2xl">
+                        {/* Message Button */}
+                        <div className="flex flex-col items-center justify-center gap-6">
+                            <p className="text-lg text-gray-700 dark:text-gray-300 text-center">
+                                Have a project in mind? Reach out and let’s build something great together.
+                            </p>
                             <a
-                                href="https://www.linkedin.com/in/omkar-patil-b744752a9/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-darkAccent dark:text-lightAccent hover:scale-110 transition-transform"
+                                href="mailto:ompatil2906@gmail.com"
+                                aria-label="Send Email"
+                                className="mt-4 bg-gradient-to-r from-emeraldGreen to-techBlue text-white px-6 py-3 rounded-full font-semibold shadow-md hover:opacity-90 hover:scale-105 transition-all duration-300"
                             >
-                                <FaLinkedin />
-                            </a>
-                            <a
-                                href="https://github.com/omkarpatil2906"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-darkAccent dark:text-lightAccent hover:scale-110 transition-transform"
-                            >
-                                <FaGithub />
+                                Drop Me a Message
                             </a>
                         </div>
                     </div>
                 </div>
-
-                {/* Suggestion line */}
-                <p className="text-center text-sm text-gray-600 dark:text-gray-400 mt-8">
-                    Have a suggestion? Reach out via email or LinkedIn!
-                </p>
-            </div>
-        </section>
+            </section>
+        </>
     );
 }
 
