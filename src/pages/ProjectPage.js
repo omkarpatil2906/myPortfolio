@@ -99,7 +99,7 @@ function ProjectSection() {
         <>
 
             <section
-                className="min-h-screen bg-light dark:bg-dark py-5 font-poppins  relative overflow-hidden"
+                className="min-h-screen bg-light dark:bg-dark py-20 font-poppins  relative overflow-hidden"
             >
                 <div className="absolute inset-0">
                     {/* Subtle Grid Pattern */}
@@ -123,7 +123,7 @@ function ProjectSection() {
                 <div className="max-w-[85rem] mx-auto relative z-10">
                     {/* Header Section */}
                     <motion.div
-                        className="text-center mb-16"
+                        className="text-center"
                         initial={{ opacity: 0, y: -30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -132,7 +132,7 @@ function ProjectSection() {
 
 
                         <motion.h2
-                            className="text-4xl md:text-5xl lg:text-6xl  pt-12 uppercase font-poppins font-bold mb-6 bg-gradient-to-r from-dark via-gray-700 to-dark dark:from-light dark:via-gray-300 dark:to-light bg-clip-text text-transparent leading-tight"
+                            className="text-4xl md:text-5xl lg:text-6xl  pt-12 uppercase font-poppins font-bold  bg-gradient-to-r from-dark via-gray-700 to-dark dark:from-light dark:via-gray-300 dark:to-light bg-clip-text text-transparent leading-tight"
                             initial={{ opacity: 0, y: -20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -143,7 +143,7 @@ function ProjectSection() {
                         </motion.h2>
 
                         <motion.p
-                            className="md:text-xl mb-8 font-josefin text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
+                            className="md:text-xl font-josefin text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -154,7 +154,7 @@ function ProjectSection() {
                     </motion.div>
 
                     {/* Projects Carousel */}
-                    <div className="relative mb-16 p-5 lg:p-0">
+                    <div className="relative mb-16 px-5 lg:p-0">
                         <Swiper
                             modules={[Navigation, Pagination, Autoplay]}
                             spaceBetween={30}

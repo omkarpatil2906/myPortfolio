@@ -5,15 +5,15 @@ import { FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 function ContactPage() {
     return (
         <>
-            <section className=" bg-light dark:bg-dark py-5 font-poppins  relative overflow-hidden">
-                <div className="max-w-6xl mx-auto p-3">
-                    <h2 className="text-3xl md:text-4xl uppercase font-poppins font-bold mb-6 text-center">
+            <section className=" bg-light dark:bg-dark py-20 font-poppins  relative overflow-hidden">
+                <div className="max-w-6xl space-y-5 mx-auto p-3">
+                    <h2 className="text-3xl md:text-4xl uppercase font-poppins font-bold  text-center">
                         Let's{' '}
                         <span className="bg-gradient-to-r from-emeraldGreen to-techBlue bg-clip-text text-transparent">
                             Connect
                         </span>
                     </h2>
-                    <p className="text-center mb-12 text-lg text-gray-700 dark:text-gray-300">
+                    <p className="text-xl font-josefin text-justify  text-gray-700 dark:text-gray-300">
                         Whether you need a portfolio, business website, or frontend development –
                         I’m ready to help you bring your ideas to life.
                     </p>
