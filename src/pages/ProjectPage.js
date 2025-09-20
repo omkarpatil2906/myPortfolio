@@ -98,7 +98,9 @@ function ProjectSection() {
     return (
         <>
 
-            <section className=" py-20 px-6 md:px-12 font-poppins transition-all duration-500 relative overflow-hidden">
+            <section
+                className="min-h-screen bg-light dark:bg-dark py-5 font-poppins  relative overflow-hidden"
+            >
 
 
                 <div className="max-w-[85rem] mx-auto relative z-10">
@@ -354,7 +356,7 @@ function ProjectSection() {
             </section>
 
             <div>
-                <Tech/>
+                <Tech />
             </div>
         </>
     );

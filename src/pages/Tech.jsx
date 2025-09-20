@@ -34,41 +34,8 @@ const technologies = [
 const Tech = () => {
   return (
     <>
-      <Helmet>
-        <title>Tech Stack - MERN, Java, SQL, React | LifoFy Tech Belagavi</title>
-        <meta
-          name="description"
-          content="Explore LifoFy Tech's powerful tech stack including MERN, Java, SQL, React.js, Spring Boot, and more. We build scalable web solutions from Belagavi, Maharashtra."
-        />
-        <meta
-          name="keywords"
-          content="MERN stack development, React developers in Belagavi, Java Spring Boot company, SQL developers India, full-stack web development, LifoFy Tech Belgaum, Belagavi tech company, Belagav web development"
-        />
-        <meta name="author" content="LifoFy Tech" />
-
-        {/* Open Graph (for social media and sharing) */}
-        <meta property="og:title" content="Our Tech Stack | LifoFy Tech" />
-        <meta
-          property="og:description"
-          content="We specialize in modern web technologies like React.js, Node.js, MongoDB, SQL, Spring Boot, and more — delivering full-stack projects from Belagavi."
-        />
-        <meta property="og:url" content="https://lifofytech.netlify.app/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="LifoFy Tech" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Tech Stack - LifoFy Tech" />
-        <meta
-          name="twitter:description"
-          content="Explore our MERN, Java, and SQL based web development stack from Belagavi, Maharashtra."
-        />
-
-        {/* Location targeting */}
-        <meta name="geo.region" content="IN-KA" />
-        <meta name="geo.placename" content="Belagavi, Maharashtra, India" />
-      </Helmet>
-      <section className="w-full overflow-hidden pt-12">
+     
+      <section className=" bg-light dark:bg-dark py-5 font-poppins  relative overflow-hidden">
 
         <div className="relative overflow-hidden">
           <div className="flex gap-10 animate-marquee p-2 whitespace-nowrap">

@@ -44,7 +44,7 @@ function Footer() {
   const normalClass = 'text-gray-700 dark:text-gray-400 hover:text-transparent hover:bg-gradient-to-r hover:from-emeraldGreen hover:to-techBlue hover:bg-clip-text transition-all duration-300';
 
   return (
-    <footer className="relative bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-dark2 dark:via-dark dark:to-gray-900 text-dark dark:text-light border-t border-gradient-to-r from-emeraldGreen/20 to-techBlue/20 py-16 px-6 md:px-12 transition-colors duration-300 overflow-hidden">
+    <footer className="relative bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-dark2 dark:via-dark dark:to-gray-900 text-dark dark:text-light border-t border-gradient-to-r py-16 px-6 md:px-12 transition-colors duration-300 overflow-hidden">
       
       {/* Animated Background */}
       <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.06]">

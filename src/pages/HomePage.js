@@ -17,7 +17,7 @@ const HomePage = () => {
 
 
   return (
-    <div className="min-h-screen bg-light dark:bg-dark font-poppins pt-20 relative overflow-hidden">
+    <div className="bg-light dark:bg-dark font-poppins  relative overflow-hidden">
 
       {/* Background Elements */}
       <div className="absolute inset-0">
@@ -74,7 +74,7 @@ const HomePage = () => {
                     }`}
                 >
                   <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold bg-gradient-to-r from-emeraldGreen via-techViolet to-techBlue bg-clip-text text-transparent mb-4">
-                    Full Stack Developer
+                    Frontend Developer
                   </h2>
                   <p className="text-base md:text-lg text-dark/80 dark:text-light/80 max-w-xl leading-relaxed">
                     Passionate about creating exceptional digital experiences with modern web technologies.

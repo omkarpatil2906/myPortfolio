@@ -31,9 +31,9 @@ const RoutePage = () => {
       </section>
 
       {/* Experience / Services Section */}
-      <section id="experience">
+      {/* <section id="experience">
         <ExperienceSection />
-      </section>
+      </section> */}
 
       {/* Projects Section */}
       <section id="projects">
