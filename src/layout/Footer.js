@@ -101,10 +101,10 @@ function Footer() {
             </h4>
             <div className="flex gap-4 mb-6">
               {[
-                { icon: FaLinkedin, href: "", label: "LinkedIn" },
-                { icon: FaGithub, href: "", label: "GitHub" },
+                { icon: FaLinkedin, href: "https://www.linkedin.com/in/omkar-patil-b744752a9", label: "LinkedIn" },
+                { icon: FaGithub, href: "https://github.com/omkarpatil2906", label: "GitHub" },
                 { icon: FaEnvelope, href: "mailto:ompatil2906@gmail.com", label: "Email" },
-                { icon: FaInstagram, href: "", label: "Instagram" }
+                { icon: FaInstagram, href: "https://www.instagram.com/_omya_patil_18", label: "Instagram" }
               ].map((social, index) => (
                 <motion.a
                   key={index}

@@ -48,7 +48,7 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="min-h-screen bg-light dark:bg-dark py-5 font-poppins relative overflow-hidden"
+      className="min-h-screen bg-light dark:bg-dark py-5 space-y-12 font-poppins relative overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0">
