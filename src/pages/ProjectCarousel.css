@@ -52,12 +52,12 @@
 }
 
 /* Responsive adjustments */
-/* @media (max-width: 640px) {
+@media (max-width: 640px) {
   .swiper-button-prev-custom,
   .swiper-button-next-custom {
     display: none;
   }
-} */
+}
 
 /* Text line clamp utility */
 .line-clamp-4 {

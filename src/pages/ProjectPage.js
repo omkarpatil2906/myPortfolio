@@ -101,7 +101,24 @@ function ProjectSection() {
             <section
                 className="min-h-screen bg-light dark:bg-dark py-5 font-poppins  relative overflow-hidden"
             >
+                <div className="absolute inset-0">
+                    {/* Subtle Grid Pattern */}
+                    <div
+                        className="w-full h-full opacity-5 dark:opacity-10"
+                        style={{
+                            backgroundImage: `
+              linear-gradient(rgba(0, 184, 148, 0.3) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(0, 184, 148, 0.3) 1px, transparent 1px)
+            `,
+                            backgroundSize: '60px 60px'
+                        }}
+                    />
 
+                    {/* Floating Shapes */}
+                    <div className="absolute top-32 right-20 w-20 h-20 bg-emeraldGreen/10 rounded-full blur-xl animate-pulse"></div>
+                    <div className="absolute bottom-40 left-20 w-16 h-16 bg-techViolet/10 rounded-full blur-lg animate-pulse delay-1000"></div>
+                    <div className="absolute top-1/2 right-32 w-12 h-12 bg-techBlue/10 rounded-full blur-md animate-pulse delay-500"></div>
+                </div>
 
                 <div className="max-w-[85rem] mx-auto relative z-10">
                     {/* Header Section */}
@@ -115,7 +132,7 @@ function ProjectSection() {
 
 
                         <motion.h2
-                            className="text-2xl md:text-4xl pt-12 uppercase font-poppins font-bold mb-6 bg-gradient-to-r from-dark via-gray-700 to-dark dark:from-light dark:via-gray-300 dark:to-light bg-clip-text text-transparent leading-tight"
+                            className="text-4xl md:text-5xl lg:text-6xl  pt-12 uppercase font-poppins font-bold mb-6 bg-gradient-to-r from-dark via-gray-700 to-dark dark:from-light dark:via-gray-300 dark:to-light bg-clip-text text-transparent leading-tight"
                             initial={{ opacity: 0, y: -20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -137,7 +154,7 @@ function ProjectSection() {
                     </motion.div>
 
                     {/* Projects Carousel */}
-                    <div className="relative mb-16">
+                    <div className="relative mb-16 p-5 lg:p-0">
                         <Swiper
                             modules={[Navigation, Pagination, Autoplay]}
                             spaceBetween={30}
@@ -304,7 +321,7 @@ function ProjectSection() {
                             Why <span className="bg-gradient-to-r from-emeraldGreen to-techBlue bg-clip-text text-transparent">Work With Me?</span>
                         </motion.h2>
                         <motion.p
-                            className="text-lg md:text-xl mb-10 font-josefin"
+                            className="text-lg text-justify md:text-xl mb-10 font-josefin"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}

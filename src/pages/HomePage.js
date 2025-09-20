@@ -17,7 +17,7 @@ const HomePage = () => {
 
 
   return (
-    <div className="bg-light dark:bg-dark font-poppins  relative overflow-hidden">
+    <div className="bg-light dark:bg-dark font-poppins pt-2 lg:pt-0 relative overflow-hidden">
 
       {/* Background Elements */}
       <div className="absolute inset-0">
@@ -40,17 +40,18 @@ const HomePage = () => {
       </div>
 
       {/* Main Content - 70% Width Centered */}
-      <div className="relative z-10 min-h-[calc(100vh-56px)] flex items-center justify-center">
-        <div className="w-[70%] max-w-6xl">
+      <div className="relative z-10 min-h-screen lg:min-h-[calc(100vh-56px)] flex flex-col lg:flex-row justify-center items-center lg:justify-center">
+
+        <div className="w-[90%] lg:w-[70%] max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
 
             {/* Text Content */}
-            <div className="space-y-6">
+            <div className="order-2 lg:order-1  space-y-6">
 
-             
+
 
               {/* Main Text */}
-              <div className="space-y-4">
+              <div className="lg:space-y-4">
                 <div
                   className={`transform transition-all duration-700 delay-400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
                     }`}
@@ -64,7 +65,7 @@ const HomePage = () => {
                   className={`transform transition-all duration-700 delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
                     }`}
                 >
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark dark:text-light leading-tight">
+                  <h1 className="text-4xl font-poppins md:text-5xl lg:text-6xl font-bold text-dark dark:text-light leading-tight">
                     Omkar Patil
                   </h1>
                 </div>
@@ -73,26 +74,26 @@ const HomePage = () => {
                   className={`transform transition-all duration-700 delay-800 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
                     }`}
                 >
-                  <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold bg-gradient-to-r from-emeraldGreen via-techViolet to-techBlue bg-clip-text text-transparent mb-4">
+                  <h2 className="text-xl font-josefin md:text-2xl lg:text-3xl font-semibold bg-gradient-to-r from-emeraldGreen via-techViolet to-techBlue bg-clip-text text-transparent mb-4">
                     Frontend Developer
                   </h2>
-                  <p className="text-base md:text-lg text-dark/80 dark:text-light/80 max-w-xl leading-relaxed">
+                  <p className="text-xl font-josefin text-justify md:text-lg text-dark/80 dark:text-light/80 max-w-xl leading-relaxed">
                     Passionate about creating exceptional digital experiences with modern web technologies.
                     Specializing in responsive, scalable, and user-friendly applications.
                   </p>
                 </div>
               </div>
 
-            
+
 
               {/* Action Buttons */}
               <div
-                className={`flex flex-col sm:flex-row gap-4 transform transition-all duration-700 delay-1400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
+                className={`flex flex-row gap-4 transform transition-all duration-700 delay-1400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
                   }`}
               >
                 <button
                   onClick={() => handleLinkClick("projects")}
-                  className="group relative px-6 py-3 bg-gradient-to-r from-emeraldGreen to-techBlue text-white rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-emeraldGreen/30 hover:-translate-y-1"
+                  className="group relative px-4 sm:px-6 py-3 bg-gradient-to-r from-emeraldGreen to-techBlue text-white rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-emeraldGreen/30 hover:-translate-y-1"
                 >
                   <span className="relative z-10">View My Projects</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-techBlue to-emeraldGreen rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -100,17 +101,17 @@ const HomePage = () => {
 
                 <button
                   onClick={() => handleLinkClick("contact")}
-                  className="group px-6 py-3 bg-transparent border-2 border-dark dark:border-light text-dark dark:text-light rounded-xl font-semibold transition-all duration-300 hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark hover:-translate-y-1"
+                  className="group px-4 sm:px-6 py-3 bg-transparent border-2 border-dark dark:border-light text-dark dark:text-light rounded-xl font-semibold transition-all duration-300 hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark hover:-translate-y-1"
                 >
                   Get In Touch
                 </button>
               </div>
 
-             
+
             </div>
 
             {/* Visual Section */}
-            <div className="relative flex justify-center lg:justify-end">
+            <div className="order-1 lg:order-2 relative  flex justify-center lg:justify-end">
               <div
                 className={`transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-12 opacity-0'
                   }`}

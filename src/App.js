@@ -5,7 +5,7 @@ import Footer from './layout/Footer';
 import SplashCursor from './common/animationComponent/CursorAnimation';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const root = document.documentElement;

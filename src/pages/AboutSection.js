@@ -48,7 +48,7 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="min-h-screen bg-light dark:bg-dark py-5 space-y-12 font-poppins relative overflow-hidden"
+      className="min-h-screen bg-light dark:bg-dark py-5 space-y-2 lg:space-y-12 font-poppins relative overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0">
@@ -76,9 +76,9 @@ const AboutSection = () => {
           : "translate-y-6 opacity-0"
           }`}
       >
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark dark:text-light leading-tight">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-poppins uppercase font-bold text-dark dark:text-light leading-tight">
           About{" "}
-          <span className="bg-gradient-to-r from-emerald-500 via-violet-500 to-blue-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-emeraldGreen to-techBlue bg-clip-text text-transparent">
             Me
           </span>
         </h2>
@@ -88,7 +88,7 @@ const AboutSection = () => {
       {/* Main Content */}
       <div className="relative z-10 flex items-center min-h-[calc(100vh-160px)]">
         {/* Parent Wrapper - 80% width, centered */}
-        <div className="flex flex-col lg:flex-row w-[80%] mx-auto items-center gap-12">
+        <div className="flex flex-col-reverse lg:flex-row w-[90%] lg:w-[80%] mx-auto items-center gap-12">
 
           {/* LEFT: Skills (40%) */}
           <div className="w-full lg:w-[40%]">
@@ -160,27 +160,27 @@ const AboutSection = () => {
           {/* RIGHT: About Text (60%) */}
           <div className="w-full lg:w-[60%] space-y-8">
             <div
-              className={`space-y-6 transform transition-all duration-700 delay-600 ${isVisible
+              className={`space-y-2 lg:space-y-6 transform transition-all duration-700 delay-600 ${isVisible
                 ? "translate-y-0 opacity-100"
                 : "translate-y-6 opacity-0"
                 }`}
             >
-              <p className="text-base md:text-lg text-dark/80 dark:text-light/80 leading-relaxed">
+              <p className="text-xl font-josefin text-justify md:text-lg text-dark/80 dark:text-light/80 leading-relaxed">
                 I'm{" "}
-                <span className="font-semibold text-emerald-500">
+                <span className="font-extrabold  text-emerald-500">
                   Omkar Patil
                 </span>
                 , a passionate{" "}
-                <span className="font-semibold text-blue-500">
+                <span className="font-bold">
                   Frontend Developer
                 </span>{" "}
                 who loves crafting modern, responsive, and scalable web
                 applications that deliver exceptional user experiences.
               </p>
 
-              <p className="text-base md:text-lg text-dark/80 dark:text-light/80 leading-relaxed">
+              <p className="text-xl text-justify font-josefin md:text-lg text-dark/80 dark:text-light/80 leading-relaxed">
                 With expertise in{" "}
-                <span className="font-semibold text-violet-500">
+                <span className="font-bold">
                   React.js, Tailwind CSS, and modern frontend technologies
                 </span>
                 , I focus on writing clean, efficient code and creating digital
@@ -195,7 +195,7 @@ const AboutSection = () => {
                 : "translate-y-6 opacity-0"
                 }`}
             >
-              <h3 className="text-lg font-semibold text-dark dark:text-light mb-4">
+              <h3 className="text-2xl font-poppins uppercase font-bold text-dark dark:text-light mb-4">
                 Professional Experience
               </h3>
               {experiences.map((exp, index) => (
